@@ -1,0 +1,110 @@
+// ==========================================================================
+// Form
+// ==========================================================================
+
+.form {
+	padding: 3rem 4rem;
+	border-radius: 1rem;
+
+	@include breakpoint-down(tablet) {
+		padding: 2rem;
+	}
+
+	h6 {
+		color: var(--c-white);
+		margin-bottom: 0.5rem;
+	}
+
+	.form__head {
+		margin-bottom: 2rem;
+		font-size: 1.5rem;
+	}
+
+	.form__body {
+		display: flex;
+		flex-wrap: wrap;
+		margin: -1rem;
+
+		@include breakpoint-down(mobile-medium) {
+			display: block;
+		}
+	}
+
+	.form__row {
+		width: 100%;
+		padding: 1rem;
+	}
+
+	.form__row--1of2 {
+		width: 50%;
+
+		@include breakpoint-down(mobile-medium) {
+			width: 100%;
+		}
+	}
+
+	.form__row label {
+		display: block;
+		font-size: 1.6rem;
+		font-weight: 500;
+		margin-bottom: 0.5rem;
+		color: #000;
+	}
+
+	.form__row input:not([type='submit']),
+	.form__row textarea {
+		width: 100%;
+		border: 0;
+		outline: none;
+		background: #eee;
+		height: 4rem;
+		line-height: 4rem;
+		border-radius: 0.5rem;
+		font-size: 1.6rem;
+		padding: 0 1.4rem;
+
+		&::placeholder {
+			color: var(--c-black);
+		}
+	}
+
+	.form__row textarea {
+		resize: none;
+		height: 14rem;
+		line-height: 1.2;
+		padding: 1.4rem;
+	}
+
+	input[type='submit'] {
+		background: #212121;
+		border: 0;
+		outline: none;
+		color: #eee;
+		font-size: 1.8rem;
+		display: block;
+		width: fit-content;
+		margin-inline: auto;
+		padding: 1.4rem 1.8rem;
+		border-radius: 0.7rem;
+		transition:
+			background 0.4s,
+			color 0.4s;
+
+		@media (hover: hover) {
+			&:hover {
+				background: #eee;
+				color: var(--c-black);
+			}
+		}
+	}
+}
+
+/* Form Orange */
+.form--orange {
+	background: var(--c-base);
+	color: var(--c-white);
+
+	h5 {
+		color: var(--c-white);
+	}
+}

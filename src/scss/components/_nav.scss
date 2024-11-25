@@ -1,0 +1,44 @@
+// ==========================================================================
+// Nav
+// ==========================================================================
+
+.nav {
+	ul {
+		display: flex;
+		gap: 3rem;
+		justify-content: center;
+		align-items: center;
+		font-size: 1.8rem;
+		font-weight: 500;
+		font-family: var(--ff-sans-serif);
+
+		@include breakpoint-down(small-desktop) {
+			font-size: 1.6rem;
+		}
+
+		@include breakpoint-down(tablet) {
+			font-size: 1.4rem;
+			gap: 1.6rem;
+		}
+
+		@include breakpoint-down(mobile) {
+			flex-direction: column;
+			gap: 1.6rem;
+			font-size: 1.6rem;
+		}
+	}
+
+	a {
+		position: relative;
+		width: fit-content;
+		display: block;
+		text-decoration: none;
+		transition: color 0.4s;
+
+		@media (hover: hover) {
+			&:hover {
+				color: var(--c-base);
+			}
+		}
+	}
+}

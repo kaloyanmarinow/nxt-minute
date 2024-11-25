@@ -1,0 +1,36 @@
+// ==========================================================================
+// Menu Toggle
+// ==========================================================================
+
+.menu-toggle {
+    background: transparent;
+    border: 0;
+    outline: none;
+
+    span {
+        display: block;
+        width: 2.6rem;
+        height: .2rem;
+        background: #fff;
+        transition: transform .4s;
+    }
+
+    span + span {
+        margin-top: .6rem;
+    };
+}
+
+.menu-toggle.is-active {
+
+    span:first-child {
+        transform: translateY(8px) rotate(45deg);
+    }
+
+    span:nth-child(2) {
+        transform: translateX(100vw);
+    }
+
+    span:last-child {
+        transform: translateY(-8px) rotate(-45deg);
+    }
+}

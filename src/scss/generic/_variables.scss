@@ -1,0 +1,26 @@
+// ==========================================================================
+// Variables
+// ==========================================================================
+
+:root {
+	--fz-html: 62.5%;
+	--fz-base: 1.8rem;
+	--fw-base: 400;
+	--lh-base: 1.3;
+	--ff-base: 'Roboto', sans-serif;
+	--ff-sans-serif: 'Montserrat Alternates', sans-serif;
+
+	--c-base: #f04208;
+	--c-black: #424242;
+	--c-white: #f5f5f5;
+	--c-darkblue: #110515;
+	--c-beige: #eecebf;
+}
+
+$breakpoints: (
+	mobile-small: 374px,
+	mobile-medium: 575px,
+	mobile: 767px,
+	tablet: 1023px,
+	small-desktop: 1199px,
+);

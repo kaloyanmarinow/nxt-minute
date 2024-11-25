@@ -1,0 +1,22 @@
+// ==========================================================================
+// Container
+// ==========================================================================
+
+.container {
+	--container-max-width: 114rem;
+	--container-gutter: 1.5rem;
+
+	max-width: calc(var(--container-max-width) + (var(--container-gutter) * 2));
+	padding-inline: var(--container-gutter);
+	margin-inline: auto;
+	width: 100%;
+
+	@include breakpoint-down(mobile) {
+		padding-inline: 3rem;
+	}
+}
+
+// container fluid
+.container--fluid {
+	max-width: none;
+}

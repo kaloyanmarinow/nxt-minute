@@ -1,0 +1,43 @@
+// ==========================================================================
+// Section Logos
+// ==========================================================================
+
+.section-logos {
+    background: #eee;
+	padding: 8rem 0;
+
+    @include breakpoint-down(tablet) {
+        padding: 6rem 0;
+    }
+
+    @include breakpoint-down(mobile-medium) {
+        padding: 4rem 0;
+    }
+
+    .section__head {
+        text-align: center;
+        margin-bottom: 6rem;
+
+        @include breakpoint-down(mobile) {
+            margin-bottom: 4rem;
+        }
+    }
+
+    .section__body ul {
+        list-style-type: none;
+        display: grid;
+        grid-template-columns: repeat(5, 1fr);
+        gap: 4rem;
+        text-align: center;
+        max-width: 98rem;
+        margin-inline: auto;
+
+        @include breakpoint-down(mobile) {
+            gap: 2rem;
+        }
+
+        @include breakpoint-down(mobile-medium) {
+            grid-template-columns: repeat(3, 1fr);
+        }
+    }
+}

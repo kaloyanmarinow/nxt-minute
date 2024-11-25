@@ -1,0 +1,98 @@
+// ==========================================================================
+// Section Contact
+// ==========================================================================
+
+.section-contact {
+	background: #212121;
+	color: #eee;
+	padding: 7rem 0 10rem;
+
+	@include breakpoint-down(small-desktop) {
+		padding: 8rem 0;
+	}
+
+	@include breakpoint-down(tablet) {
+		padding: 6rem 0;
+	}
+
+	@include breakpoint-down(mobile) {
+		font-size: 1.4rem;
+		padding: 4rem 0 6rem;
+	}
+
+	.section__head {
+		margin-bottom: 7rem;
+		font-weight: 500;
+		font-size: 2rem;
+		line-height: 1.6;
+		text-align: center;
+		max-width: 90rem;
+		margin-inline: auto;
+
+		@include breakpoint-down(small-desktop) {
+			margin-bottom: 6rem;
+		}
+	
+		@include breakpoint-down(tablet) {
+			margin-bottom: 4rem;
+		}
+
+		@include breakpoint-down(mobile) {
+			margin-bottom: 3rem;
+			font-size: 1.8rem;
+			line-height: 1.4;
+		}
+
+		@include breakpoint-down(mobile-medium) {
+			font-size: 1.6rem;
+		}
+	}
+
+	.section__body {
+		display: grid;
+		grid-template-columns: 1fr 60%;
+		gap: 3rem;
+
+		@include breakpoint-down(mobile) {
+			grid-template-columns: 1fr;
+		}
+	}
+
+	.section__body-info {
+		padding-top: 3rem;
+
+		@include breakpoint-down(mobile) {
+			display: grid;
+			grid-template-columns: 1fr 1fr 1fr;
+			gap: 2rem;
+			padding-top: 0;
+		}
+
+		@include breakpoint-down(mobile-medium) {
+			grid-template-columns: 1fr;
+		}
+	}
+
+	.section__inf0o-entry h6 {
+		margin-bottom: 1rem;
+	}
+
+	.section__info-entry a {
+		text-decoration: none;
+		transition: color 0.4s;
+
+		@media (hover: hover) {
+			&:hover {
+				color: var(--c-base);
+			}
+		}
+	}
+
+	.section__info-entry + .section__info-entry {
+		margin-top: 4rem;
+
+		@include breakpoint-down(mobile) {
+			margin-top: 0;
+		}
+	}
+}

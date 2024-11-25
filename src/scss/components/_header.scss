@@ -1,0 +1,64 @@
+// ==========================================================================
+// Haader
+// ==========================================================================
+
+.header {
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	z-index: 100;
+
+	.header__menu {
+		margin-inline: auto;
+		padding: 2.2rem 3rem;
+		background: #212121;
+		color: var(--c-white);
+		box-shadow: 0px 1px 20px 0px rgba(0, 0, 0, 0.3);
+		border-radius: 0 0 1rem 1rem;
+
+		@include breakpoint-down(tablet) {
+			padding: 1.8rem 2rem;
+		}
+
+		@include breakpoint-down(mobile) {
+			position: fixed;
+			top: 0;
+			right: 0;
+			height: 100dvh;
+			width: 100vw;
+			max-width: 40rem;
+			z-index: 100;
+			border-radius: 0;
+			padding: 8rem 2rem 4rem;
+			overflow: scroll;
+			-ms-overflow-style: none;
+ 			scrollbar-width: none;
+			transform: translateX(100vw);
+			transition: transform .4s;
+
+			&::-webkit-scrollbar {
+				display: none;
+			}
+
+			&.is-active {
+				transform: translateX(0);
+			}
+		}
+	}
+
+	.header__toggle {
+		position: relative;
+		z-index: 101;
+		display: none;
+		background: #212121;
+		border-radius: 0 0 1rem 1rem;
+		width: fit-content;
+		margin-left: auto;
+		padding: 1.4rem;
+
+		@include breakpoint-down(mobile) {
+			display: block;
+		}
+	}
+}

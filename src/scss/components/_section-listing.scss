@@ -1,0 +1,92 @@
+// ==========================================================================
+// Section Listing
+// ==========================================================================
+
+.section-listing {
+	padding: 10rem 0;
+
+	@include breakpoint-down(small-desktop) {
+		padding: 8rem 0;
+	}
+
+	@include breakpoint-down(tablet) {
+		padding: 6rem 0;
+	}
+
+	@include breakpoint-down(mobile-medium) {
+		padding: 4rem 0;
+	}
+
+	.section__title {
+		text-align: center;
+		margin-bottom: 5rem;
+
+		@include breakpoint-down(mobile-medium) {
+			margin-bottom: 3rem;
+		}
+	}
+
+	.section__listing ul {
+		list-style-type: none;
+		display: grid;
+		gap: 4rem;
+		grid-template-columns: repeat(3, 1fr);
+
+		@include breakpoint-down(tablet) {
+			gap: 2rem;
+		}
+
+		@include breakpoint-down(mobile) {
+			grid-template-columns: 1fr;
+		}
+	}
+
+	.section__listing ul li {
+		padding: 3rem;
+		border: 0.2rem solid var(--c-base);
+		border-radius: 1rem;
+		text-align: center;
+
+		@include breakpoint-down(tablet) {
+			padding: 2.4rem 1.6rem;
+		}
+
+		@include breakpoint-down(mobile) {
+			display: grid;
+			align-items: center;
+			grid-template-columns: 20rem 1fr;
+			gap: 2rem;
+			text-align: left;
+			padding: 2.4rem;
+		}
+
+		@include breakpoint-down(mobile-medium) {
+			grid-template-columns: 1fr;
+		}
+	}
+
+	.section__listing ul h6 {
+		margin-bottom: 1rem;
+	}
+
+	.section__listing-image {
+		position: relative;
+		aspect-ratio: 1 / 1;
+		border-radius: 0.5rem;
+		margin-bottom: 3rem;
+		overflow: hidden;
+
+		@include breakpoint-down(mobile) {
+			margin-bottom: 0;
+		}
+	}
+
+	.section__listing-image img {
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 100%;
+		object-fit: cover;
+	}
+}
