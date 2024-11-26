@@ -1,0 +1,38 @@
+// ==========================================================================
+// Ticker
+// ==========================================================================
+
+.ticker {
+	.ticker__inner {
+		display: flex;
+		gap: 4rem;
+		flex-shrink: 0;
+	}
+
+	.ticker__container {
+		display: flex;
+		gap: 4rem;
+		animation: ticker 30s linear infinite;
+
+		@include breakpoint-down(mobile) {
+			gap: 2rem;
+		}
+	}
+
+	.ticker__container:hover {
+		animation-play-state: paused;
+	}
+
+	.ticker__item {
+		flex-shrink: 0;
+	}
+}
+
+@keyframes ticker {
+	0% {
+		transform: translateZ(0);
+	}
+	to {
+		transform: translate3d(var(--item-width), 0, 0);
+	}
+}

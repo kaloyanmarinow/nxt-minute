@@ -9,3 +9,4 @@ import '/scss/style.scss';
 import './modules/scroll-to';
 import './modules/menu-toggle';
 import './modules/form-submit';
+import './modules/ticker';

@@ -12,6 +12,9 @@ document.querySelectorAll('.js-scroll-to').forEach((link) => {
 			behavior: 'smooth',
 		});
 
+		document.querySelector('.js-menu').classList.remove('is-active');
+		document.querySelector('.js-menu-toggle').classList.remove('is-active');
+
 		event.preventDefault();
 	});
 });
