@@ -331,34 +331,30 @@
 
 					<div class="section__body-form">
 						<div class="form form--orange">
-							<form action="?">
+							<form id="contactForm">
 								<div class="form__head">
 									<h5>Свържете се с нас</h5>
 								</div><!-- /.form__head -->
 			
 								<div class="form__body">
-									<div class="form__row form__row--1of2">
-										<input type="text" id="first_name" name="first_name" required placeholder="Име*" />
+									<div class="form__row">
+										<input type="text" id="name" name="name" placeholder="Име *" />
 									</div><!-- /.form__row -->
 
-									<div class="form__row form__row--1of2">
-										<input type="text" id="last_name" name="last_name" required placeholder="Фамилия*" />
+									<div class="form__row">
+										<input type="email" id="contact_email" name="contact_email" placeholder="Email *" />
 									</div><!-- /.form__row -->
 
-									<div class="form__row form__row--1of2">
-										<input type="email" id="contact_email" name="contact_email" required placeholder="Email*" />
-									</div><!-- /.form__row -->
-
-									<div class="form__row form__row--1of2">
+									<div class="form__row">
 										<input type="phone" id="contact_phone" name="contact_phone" placeholder="Телефон за връзка" />
 									</div><!-- /.form__row -->
 
 									<div class="form__row">
-										<textarea id="contact_message" name="contact_message" placeholder="Съобщение*" required></textarea>
+										<textarea id="contact_message" name="contact_message" placeholder="Съобщение *"></textarea>
 									</div><!-- /.form__row -->
 			
 									<div class="form__row">
-										<input type="submit" id="newsletter_submit" value="Свържете се с нас" class="btn" />
+										<input type="submit" value="Свържете се с нас" class="btn" />
 									</div><!-- /.form__row -->
 								</div><!-- /.form__body -->
 							</form>
