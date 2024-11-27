@@ -49,7 +49,7 @@ form.addEventListener('submit', async (event) => {
 
 	try {
 		// Send email using EmailJS
-		await emailjs.send('service_x7ktoos', 'template_nq27ofx', formData);
+		await emailjs.send('service_ngado9i', 'template_nq27ofx', formData);
 
 		// Hide the loader and show success message
 		loader.style.display = 'none';
