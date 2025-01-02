@@ -13,4 +13,26 @@
 		font-weight: 500;
 		letter-spacing: 0.02em;
 	}
+
+	.footer__container {
+		display: flex;
+		justify-content: space-between;
+	}
+
+	.footer__container p {
+		margin-bottom: 0;
+	}
+
+	.footer__container a {
+		margin-bottom: 0;
+		display: block;
+		text-decoration: none;
+		transition: opacity .4s;
+
+		@media(hover: hover) and (pointer: fine) {
+			&:hover {
+				opacity: .7;		
+			}
+		}
+	}
 }

@@ -54,12 +54,6 @@
 	&:before {
 		background-color: var(--c-base);
 	}
-
-	@media (hover: hover) {
-		&:hover {
-			color: var(--c-black);
-		}
-	}
 }
 
 // Btn block

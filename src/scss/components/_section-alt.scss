@@ -18,6 +18,14 @@
 	}
 
 	.section__title {
+		margin-bottom: 2rem;
+
+		@include breakpoint-down(mobile-medium) {
+			margin-bottom: 1rem;
+		}
+	}
+
+	.section__content {
 		margin-bottom: 3rem;
 
 		@include breakpoint-down(mobile-medium) {
