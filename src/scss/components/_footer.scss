@@ -12,5 +12,39 @@
 		padding: 1.6rem 0 1.4rem;
 		font-weight: 500;
 		letter-spacing: 0.02em;
+
+		@include breakpoint-down(mobile) {
+			padding: 2rem 0;		
+		}
+	}
+
+	.footer__container {
+		display: flex;
+		justify-content: space-between;
+
+		@include breakpoint-down(mobile) {
+			display: block;		
+		}
+	}
+
+	.footer__container p {
+		margin-bottom: 0;
+
+		@include breakpoint-down(mobile) {
+			margin-bottom: 1.6rem;		
+		}
+	}
+
+	.footer__container a {
+		margin-bottom: 0;
+		display: block;
+		text-decoration: none;
+		transition: opacity .4s;
+
+		@media(hover: hover) and (pointer: fine) {
+			&:hover {
+				opacity: .7;		
+			}
+		}
 	}
 }

@@ -1,0 +1,74 @@
+/* ------------------------------------------------------------ *\
+	Privacy
+\* ------------------------------------------------------------ */
+
+.section-privacy {
+	min-height: 100vh;
+	padding: 60px 0;
+
+	.section__head {
+		padding-bottom: 20px;
+		margin-bottom: 20px;
+		border-bottom: 1px solid #ddd;
+	}
+
+	.section__head a {
+		display: inline-flex;
+		gap: 12px;
+		align-items: center;
+		text-decoration: none;
+		font-weight: 600;
+		transition: color .4s;
+
+		@media(hover: hover) and (pointer: fine) {
+			&:hover {
+				color: var(--c-base);		
+			}
+		}
+	}
+
+	.section__head a svg {
+		width: 24px;
+		height: 24px;
+	}
+
+	.section__body p,
+	.section__body h5 {
+		margin-bottom: 2.6rem;
+	}
+
+	.section__body h5 {
+		margin-top: 4rem;
+	}
+
+	.section__body a:not([class]) {
+		font-weight: 600;
+		text-decoration: none;
+		color: var(--c-base);
+		transition: opacity .4s;
+
+		@media(hover: hover) and (pointer: fine) {
+			&:hover {
+				opacity: .7;		
+			}
+		}
+	}
+}
+
+.privacy_root {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	padding: 24px;
+}
+  
+.privacy_content {
+	max-width: 1000px;
+	margin-inline: auto;
+}
+  
+.privacy_text {
+	padding-left: 10px;
+	font-size: 16px;
+	margin-bottom: 16px;
+}
