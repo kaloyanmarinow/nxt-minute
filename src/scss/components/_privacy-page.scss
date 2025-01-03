@@ -1,0 +1,19 @@
+// ==========================================================================
+// CTA
+// ==========================================================================
+
+.privacy_root {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	padding: 24px;
+}
+
+.privacy_content {
+	max-width: 1000px;
+	margin-inline: auto;
+}
+
+.privacy_content ul {
+	margin-left: 36px;
+}
